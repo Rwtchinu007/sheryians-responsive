@@ -23,7 +23,7 @@ body {
 }
 nav {
   @include flex-space();
-  padding: 1.2rem 4rem;
+  padding: 1.2rem 3.5rem;
   font-family: neu;
   width: 100%;
   position: fixed;
@@ -94,10 +94,15 @@ nav {
     }
   }
 }
+main{
+  .section1{
+    
+  };
+}
 
 @media (max-width: 600px) {
   nav {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.2rem;
     .logo{
       img{
         width: 25px;
@@ -112,13 +117,15 @@ nav {
     .nav2{
       display: flex;
       align-items: center;
-      margin-right: 0.5rem;
-      gap: 2rem;
+      gap: 1.25rem;
       h4{
         font-size: 1.1rem;
         cursor: pointer;
         font-weight: 100;
         color: rgb(227, 227, 227);
+      }
+      svg{
+        width: 1.2rem;
       }
     }
   }
