@@ -2,6 +2,14 @@
   font-family: neu;
   src: url(./NeueMachina-Regular_DQCmjH1st.ttf);
 }
+@font-face {
+  font-family: hell;
+  src: url(./HelveticaNowDisplay-Medium_2wEhlmo-TD.ttf);
+}
+@font-face {
+  font-family: gill;
+  src: url(./gill.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +24,7 @@ body {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(12, 12, 12);
 }
 
 nav {
@@ -26,7 +34,6 @@ nav {
   padding: 1.2rem 3.5rem;
   font-family: neu;
   width: 100%;
-  position: fixed;
 }
 nav .logo {
   display: flex;
@@ -46,7 +53,7 @@ nav .logo h4 {
 nav .text {
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 3.3rem;
 }
 nav .text h4 {
   font-size: 0.9rem;
@@ -92,12 +99,149 @@ nav .nav2 h4 i {
   font-size: 1.1rem;
 }
 
+main .section1 {
+  padding: 0.5rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+main .section1 .left {
+  width: 50%;
+  padding: 1rem;
+}
+main .section1 .left h1 {
+  font-size: 2.55rem;
+  line-height: 1;
+  font-weight: 100;
+  font-family: hell;
+  width: 87%;
+}
+main .section1 .left .tags {
+  margin-top: 1.3rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  width: 75%;
+}
+main .section1 .left .tags h4 {
+  background-color: rgb(30, 30, 30);
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 550;
+  font-size: 0.75rem;
+  font-family: hell;
+}
+main .section1 .left h3 {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: gill;
+}
+main .section1 .left h3 span.green {
+  color: rgb(2, 231, 151);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+main .section1 .left h3 span.grey {
+  color: grey;
+  text-decoration: line-through;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+main .section1 .left h3 span.gst {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+main .section1 .left h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: gill;
+  color: rgb(2, 231, 151);
+}
+main .section1 .left .buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.9rem;
+}
+main .section1 .left .buttons .btn1,
+main .section1 .left .buttons .btn2 {
+  padding: 1.1rem 4.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: gill;
+  font-weight: 900;
+}
+main .section1 .left .buttons .btn1 {
+  background-color: rgb(0, 149, 96);
+  color: white;
+}
+main .section1 .left .buttons .btn2 {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  font-weight: 100;
+  padding: 1rem 3rem;
+}
+main .section1 .left h6 {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: hell;
+  color: rgb(255, 255, 255);
+}
+main .section1 .left h6 span {
+  color: rgb(2, 231, 151);
+  font-size: 1rem;
+}
+main .section1 .right {
+  width: 47%;
+}
+main .section1 .right .image img {
+  width: 100%;
+}
+main .section1 .right .text {
+  margin-top: -0.3rem;
+  background-color: rgb(30, 30, 30);
+  padding: 0.8rem;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  gap: 0.7rem;
+}
+main .section1 .right .text h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: gill;
+  background-color: rgb(21, 21, 21);
+  padding: 0.8rem 1.2rem;
+  width: 45%;
+  border-radius: 4px;
+}
+main .section1 .right .text h4 span {
+  margin-left: 0.3rem;
+  font-weight: 400;
+  color: rgb(2, 231, 151);
+  font-size: 0.9rem;
+}
+main .section1 .right .text h4 .white {
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
 @media (max-width: 600px) {
   nav {
     padding: 1rem 1.2rem;
   }
   nav .logo img {
-    width: 25px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   nav .logo h4 {
     font-size: 0.9rem;

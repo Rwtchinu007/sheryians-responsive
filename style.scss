@@ -2,6 +2,14 @@
   font-family: neu;
   src: url(./NeueMachina-Regular_DQCmjH1st.ttf);
 }
+@font-face {
+  font-family: hell;
+  src: url(./HelveticaNowDisplay-Medium_2wEhlmo-TD.ttf);
+}
+@font-face {
+  font-family: gill;
+  src: url(./gill.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +22,7 @@ body {
   width: 100%;
 }
 body {
-  background-color: black;
+  background-color: rgb(12, 12, 12);
 }
 @mixin flex-space {
   display: flex;
@@ -26,7 +34,7 @@ nav {
   padding: 1.2rem 3.5rem;
   font-family: neu;
   width: 100%;
-  position: fixed;
+  // position: fixed;
 
   .logo {
     display: flex;
@@ -41,13 +49,12 @@ nav {
       font-weight: 100;
       color: rgb(227, 227, 227);
       width: 100%;
-
     }
   }
   .text {
     display: flex;
     align-items: center;
-    gap: 3.2rem;
+    gap: 3.3rem;
     h4 {
       font-size: 0.9rem;
       cursor: pointer;
@@ -58,27 +65,27 @@ nav {
         font-size: 1.1rem;
       }
     }
-     h4.boot{
+    h4.boot {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: white;
+      i {
         font-size: 0.95rem;
-        font-weight: 600;
-        color: white;
-        i{
-          font-size: 0.95rem;
-          margin-left: 0.2rem;
-        }
+        margin-left: 0.2rem;
       }
+    }
 
     img {
       width: 28px;
       border-radius: 50%;
     }
-    svg{
+    svg {
       cursor: pointer;
       width: 1.45rem;
       fill: rgb(227, 227, 227);
     }
   }
-  .nav2{
+  .nav2 {
     display: none;
     align-items: center;
     gap: 3.2rem;
@@ -94,37 +101,173 @@ nav {
     }
   }
 }
-main{
-  .section1{
-    
-  };
+main {
+  .section1 {
+    padding: 0.5rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      width: 50%;
+      padding: 1rem;
+      h1 {
+        font-size: 2.55rem;
+        line-height: 1;
+        font-weight: 100;
+        font-family: hell;
+        width: 87%;
+      }
+      .tags {
+        margin-top: 1.3rem;
+        display: flex;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+        width: 75%;
+        h4 {
+          background-color: rgb(30, 30, 30);
+          padding: 0.5rem 1.2rem;
+          border-radius: 4px;
+          font-weight: 550;
+          font-size: 0.75rem;
+          font-family: hell;
+        }
+      }
+      h3 {
+        margin-top: 2.5rem;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: gill;
+        span.green {
+          color: rgb(2, 231, 151);
+          font-weight: 700;
+          font-size: 1.7rem;
+        }
+        span.grey {
+          color: grey;
+          text-decoration: line-through;
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+        span.gst {
+          color: rgb(255, 255, 255);
+          font-size: 1.2rem;
+          margin-left: 0.5rem;
+          font-weight: 600;
+        }
+      }
+      h5 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-family: gill;
+        color: rgb(2, 231, 151);
+      }
+      .buttons {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.9rem;
+        .btn1,
+        .btn2 {
+          padding: 1.1rem 4.5rem;
+          border: none;
+          border-radius: 6px;
+          font-size: 1.2rem;
+          cursor: pointer;
+          font-family: gill;
+          font-weight: 900;
+        }
+        .btn1 {
+          background-color: rgb(0, 149, 96);
+          color: white;
+        }
+        .btn2 {
+          background-color: rgb(53, 53, 53);
+          color: white;
+          // border: 1.5px solid white;
+          font-weight: 100;
+          padding: 1rem 3rem;
+        }
+      }
+      h6 {
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        font-family: hell;
+        color: rgb(255, 255, 255);
+        span {
+          color: rgb(2, 231, 151);
+          font-size: 1rem;
+        }
+      }
+    }
+    .right {
+      width: 47%;
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+      .text {
+        margin-top: -0.3rem;
+        background-color: rgb(30, 30, 30);
+        padding: 0.8rem;
+        padding-top: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        gap: 0.7rem;
+        h4 {
+          font-size: 0.85rem;
+          font-weight: 600;
+          font-family: gill;
+          background-color: rgb(21, 21, 21);
+          padding: 0.8rem 1.2rem;
+          width: 45%;
+          border-radius: 4px;
+          span {
+            margin-left: 0.3rem;
+            font-weight: 400;
+            color: rgb(2, 231, 151);
+            font-size: 0.9rem;
+          }
+          .white {
+            color: white;
+            font-weight: 600;
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {
   nav {
     padding: 1rem 1.2rem;
-    .logo{
-      img{
-        width: 25px;
+    .logo {
+      img {
+        width: 100%;
+        object-fit: cover;
+
       }
-      h4{
-  font-size: 0.9rem;
+      h4 {
+        font-size: 0.9rem;
       }
     }
     .text {
       display: none;
     }
-    .nav2{
+    .nav2 {
       display: flex;
       align-items: center;
       gap: 1.25rem;
-      h4{
+      h4 {
         font-size: 1.1rem;
         cursor: pointer;
         font-weight: 100;
         color: rgb(227, 227, 227);
       }
-      svg{
+      svg {
         width: 1.2rem;
       }
     }
